@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:id="@+id/layout_titleTv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+<ImageView
+    android:id="@+id/logo_person"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/ic_person"
+    android:layout_margin="10dp"/>
+        <TextView
+            android:id="@+id/dashboard_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dashboard"
+            android:layout_toRightOf="@+id/logo_person"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="100dp"
+            android:textStyle="bold"
+            android:textSize="22dp"
+            />
+
+        <Button
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/ic_settings" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layout_titleTv">
+
+        <TextView
+android:id="@+id/beach_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="40dp"
+
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:text="Beach"
+            android:textColor="#8f8e8e"
+            android:textSize="22sp"
+            android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/place_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginLeft="40dp"
+
+android:layout_below="@+id/beach_textview"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="20dp"
+            android:text="27 places"
+            android:textColor="@color/black"
+            android:textSize="32sp"
+            android:textStyle="bold"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/beach_textview"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/ic_location"/>
+        <Button
+            android:id="@+id/cyle_button"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/ic_fire"
+            android:layout_below="@id/place_textview"
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="10dp"/>
+        <Button
+            android:id="@+id/fire_button"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/ic_bike"
+            android:layout_below="@id/cyle_button"
+            android:layout_marginBottom="10dp"/>
+        <Button
+            android:id="@+id/done_button"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/ic_done"
+            android:layout_below="@id/fire_button"
+            android:layout_marginBottom="10dp"/>
+        <HorizontalScrollView
+            android:id="@+id/place_scroll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/place_textview"
+            android:layout_toRightOf="@+id/cyle_button"
+            >
+            <LinearLayout
+                android:id="@+id/layout_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/content"
+
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="15dp"
+                android:layout_weight="3"
+                android:orientation="horizontal">
+
+
+
+
+
+
+                <Button
+                    android:id="@+id/top_up_button"
+                    android:layout_width="112dp"
+                    android:layout_height="300dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/ic_goa"
+
+
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/data_button"
+                    android:layout_width="112dp"
+                    android:layout_height="300dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/ic_bali"
+
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/bundle_button"
+                    android:layout_width="112dp"
+                    android:layout_height="300dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/ic_thailand"
+
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/flexi_button"
+                    android:layout_width="112dp"
+                    android:layout_height="300dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/ic_combodia"
+                    android:text="Flexi"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:visibility="visible" />
+
+                <Button
+                    android:id="@+id/pin_button"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/layout_white_background"
+                    android:text="PIN"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:visibility="visible" />
+                <Button
+                    android:id="@+id/eVoucher_button"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/layout_white_background"
+                    android:text="e Voucher"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:visibility="visible" />
+
+
+            </LinearLayout>
+
+        </HorizontalScrollView>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/place_scroll">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@drawable/ic_persona"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@drawable/ic_personc"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@drawable/ic_personb"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@drawable/ic_persond"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

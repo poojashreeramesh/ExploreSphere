@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ic_common_background">
+    <RelativeLayout
+        android:id="@+id/layout_survrey"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/layout_survey">
+        <TextView
+            android:id="@+id/survey_TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="32sp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:text="Survey"
+            android:textStyle="bold"
+            android:textColor="@color/black"/>
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:layout_centerHorizontal="true"
+            android:text="Complete this survey to unlock personalized travel packages tailored just for you
+
+" android:gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_below="@+id/survey_TextView"
+            android:layout_marginBottom="30dp"
+            android:textColor="#030303"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_Q1"
+        android:layout_width="match_parent"
+        android:layout_height="315dp"
+        android:layout_below="@+id/layout_survrey"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/layout_background_aboutus">
+
+        <TextView
+            android:id="@+id/Q1_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="20dp"
+            android:text="Q2"
+            android:textColor="#8f8e8e"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/ic_person"/>
+
+        <TextView
+            android:id="@+id/Q1e_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Q1_textview"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:text="How much money do you have set aside for this trip? "
+            android:textSize="29sp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="4dp"
+            android:layout_below="@+id/Q1e_textview"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="30dp"
+            android:background="@drawable/layout_edittext">
+
+            <View
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:background="@color/black"
+
+                />
+        </RelativeLayout>
+
+    </RelativeLayout>
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="125dp"
+        android:layout_height="45dp"
+        android:layout_below="@+id/layout_Q1"
+        android:text="2-3 days"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="40dp"
+        android:background="@drawable/layout_white_background"/>
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="125dp"
+        android:layout_height="45dp"
+        android:layout_below="@+id/button1"
+        android:layout_marginTop="20dp"
+        android:text="5-7 days"
+        android:background="@drawable/layout_white_background"
+        android:layout_marginLeft="40dp"/>
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="125dp"
+        android:layout_height="45dp"
+        android:layout_below="@+id/layout_Q1"
+        android:text="2-4 days"
+        android:layout_marginLeft="20dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="40dp"
+        android:background="@drawable/layout_white_background"/>
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="125dp"
+        android:layout_height="45dp"
+        android:layout_below="@+id/button3"
+        android:text="1-2 weeks"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="40dp"
+        android:background="@drawable/layout_white_background"/>
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="125dp"
+        android:layout_height="45dp"
+        android:layout_below="@+id/button2"
+        android:layout_marginTop="20dp"
+        android:text="2-3 weeks"
+        android:layout_marginLeft="40dp"
+        android:background="@drawable/layout_white_background"/>
+    <Button
+        android:id="@+id/button6"
+        android:layout_width="125dp"
+        android:layout_height="45dp"
+        android:layout_below="@+id/button4"
+        android:text="1+Months"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="40dp"
+        android:background="@drawable/layout_white_background"/>
+
+</RelativeLayout>

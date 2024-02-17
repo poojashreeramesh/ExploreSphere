@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <RelativeLayout
+        android:id="@+id/layout_logo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/blackbackgroundimage">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/ic_company_image"
+            android:layout_marginTop="100dp"
+            />
+
+    </RelativeLayout>
+<RelativeLayout
+    android:id="@+id/Layout_username"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/layout_logo"
+    android:layout_centerHorizontal="true">
+    <TextView
+        android:id="@+id/login_TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30dp"
+        android:text="Login"
+        android:textColor="@color/black"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+
+
+        />
+    <TextView
+        android:id="@+id/signin_TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:text="Sign In to Continue"
+        android:textColor="#8f8e8e"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/login_TextView"
+        />
+    <TextView
+        android:id="@+id/name_TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/signin_TextView"
+        android:text="Name"
+        android:textSize="15sp"
+        android:layout_marginLeft="50dp"
+        android:textColor="#8f8e8e"
+        android:typeface="sans"
+
+        />
+<EditText
+    android:id="@+id/name_EditText"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:layout_below="@id/name_TextView"
+    android:background="@drawable/layout_edittext"
+    android:layout_marginLeft="30dp"
+    android:layout_marginRight="30dp"
+    android:hint="Enter Your Name"
+    android:textSize="16sp"
+    android:layout_marginTop="10dp"
+    android:paddingLeft="10dp"
+    /><TextView
+    android:id="@+id/password_TextView"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/name_EditText"
+    android:text="Password"
+    android:textSize="15sp"
+    android:layout_marginLeft="50dp"
+    android:textColor="#8f8e8e"
+    android:layout_marginTop="10dp"
+    android:typeface="sans"
+
+    />
+    <EditText
+        android:id="@+id/password_EditText"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/password_TextView"
+        android:background="@drawable/layout_edittext"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:textSize="16sp"
+        android:layout_marginTop="10dp"
+
+        android:paddingLeft="10dp"
+        />
+<Button
+    android:id="@+id/signIn_button"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:layout_below="@id/password_EditText"
+    android:layout_marginTop="10dp"
+    android:layout_marginRight="30dp"
+    android:layout_marginLeft="30dp"
+    android:textColor="@color/white"
+    android:text="LogIn"
+    android:textStyle="bold"
+    android:background="@drawable/layout_button"
+    />
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerHorizontal="true"
+    android:layout_below="@id/signIn_button"
+    android:text="SignIn!"
+    android:textColor="@color/textColor"
+    />
+</RelativeLayout>
+</RelativeLayout>
