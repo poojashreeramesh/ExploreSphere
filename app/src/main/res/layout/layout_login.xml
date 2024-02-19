@@ -55,6 +55,7 @@
         android:layout_marginLeft="50dp"
         android:textColor="#8f8e8e"
         android:typeface="sans"
+        android:textStyle="bold"
 
         />
 <EditText
@@ -66,7 +67,10 @@
     android:layout_marginLeft="30dp"
     android:layout_marginRight="30dp"
     android:hint="Enter Your Name"
-    android:textSize="16sp"
+    android:textSize="20sp"
+    android:lines="1"
+    android:singleLine="true"
+    android:longClickable="false"
     android:layout_marginTop="10dp"
     android:paddingLeft="10dp"
     /><TextView
@@ -80,6 +84,7 @@
     android:textColor="#8f8e8e"
     android:layout_marginTop="10dp"
     android:typeface="sans"
+    android:textStyle="bold"
 
     />
     <EditText
@@ -92,8 +97,14 @@
         android:layout_marginRight="30dp"
         android:textSize="16sp"
         android:layout_marginTop="10dp"
-
+        android:imeOptions="actionDone"
+        android:inputType="numberPassword"
+        android:longClickable="false"
+        android:maxLength="6"
+        android:paddingRight="15dp"
         android:paddingLeft="10dp"
+        android:lines="1"
+
         />
 <Button
     android:id="@+id/signIn_button"

@@ -1,6 +1,234 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+   >
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <RelativeLayout
+        android:id="@+id/layout_image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ic_indoesia">
+        <Button
+            android:id="@+id/back_button"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/ic_arrow_black"
+            />
+
+        <TextView
+            android:id="@+id/weather_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/back_button"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:text="Weather data given by IHS-Weathering Heights"
+            android:textSize="14dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/bali_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/weather_textview"
+            android:layout_marginStart="10dp"
+
+            android:layout_marginEnd="10dp"
+
+            android:text="Bali    14C"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/indoiase_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/bali_textview"
+            android:layout_marginStart="10dp"
+
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:text="Indonesia"
+            android:textSize="32sp"
+            android:textStyle="bold" />
+
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layout_image"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/layout_white_background">
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/days_textview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:text="5 days and 4 nights Stay in Bali"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:layout_marginRight="15dp"
+            />
+        <TextView
+            android:id="@+id/baliWhy_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:text="Why Bali?"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:layout_marginLeft="15dp"
+            android:layout_below="@+id/days_textview"
+            android:layout_gravity="center"
+            />
+    <TextView
+        android:id="@+id/baliexplaination_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="Bali is famous for a diverse experience blending adventure and tranquility. Explore the island's scenic landscapes on cycling tours, immersing in lush rice terraces and vibrant local culture. Bali's pristine beaches offer sun-soaked relaxation and thrilling water activities. Moreover, the island's spiritual essence, with its ancient temples and yoga retreats, provides a serene retreat for self-discovery. Bali's unique blend of cycling adventures, idyllic beaches, and spiritual retreats creates an unforgettable journey, appealing to those seeking both thrilling exploration and inner peace.
+
+"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        android:textColor="#8f8e8e"
+        android:layout_marginLeft="15dp"
+        android:layout_below="@+id/baliWhy_textview"
+        android:layout_gravity="center"
+        />
+    <LinearLayout
+        android:id="@+id/layout_bali_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/baliexplaination_textview"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp">
+       <ImageView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:background="@drawable/ic_balia"
+           android:layout_marginRight="5dp"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_balic"
+            android:layout_marginRight="5dp"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_balib"/>
+
+    </LinearLayout>
+    <TextView
+        android:id="@+id/food_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:text="Hotel"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:layout_marginLeft="15dp"
+        android:layout_below="@+id/layout_bali_image"
+        android:layout_gravity="center"
+        />
+    <TextView
+        android:id="@+id/foodans_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="Bali, renowned for its enchanting landscapes and vibrant culture, boasts a plethora of top-notch hotels. Among the best, the luxurious Ayana Resort and Spa offers breathtaking cliffside views, while The St. Regis Bali Resort combines opulence with traditional Balinese charm. The Mulia, with its pristine beaches, and the Four Seasons Resort Bali at Sayan, nestled in lush greenery, redefine indulgence in this tropical paradise."
+
+
+        android:textSize="16dp"
+        android:textStyle="bold"
+        android:textColor="#8f8e8e"
+        android:layout_marginLeft="15dp"
+        android:layout_below="@+id/food_textview"
+        android:layout_gravity="center"
+        />
+    <LinearLayout
+        android:id="@+id/layout_hotel_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/foodans_textview"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_hotela"
+            android:layout_marginRight="10dp"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_hotelb"
+            android:layout_marginRight="5dp"/>
+
+
+    </LinearLayout>
+    <TextView
+        android:id="@+id/fooda_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:text="Food"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:layout_marginLeft="15dp"
+        android:layout_below="@+id/layout_hotel_image"
+        android:layout_gravity="center"
+        />
+    <TextView
+        android:id="@+id/foodaans_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="Bali, a paradise for food enthusiasts, offers a tantalizing array of culinary delights that capture the essence of Indonesian cuisine. From savory Nasi Goreng, a flavorful fried rice dish, to succulent Babi Guling, a traditional Balinese roast pork, every bite unveils a symphony of spices and local flavors. Fresh seafood warung by the beach and vibrant markets showcasing exotic fruits add to the island's gastronomic charm, making Bali a haven for those seeking an unforgettable culinary adventure."
+
+
+        android:textSize="16dp"
+        android:textStyle="bold"
+        android:textColor="#8f8e8e"
+        android:layout_marginLeft="15dp"
+        android:layout_below="@+id/fooda_textview"
+        android:layout_gravity="center"
+        />
+    <LinearLayout
+        android:id="@+id/layout_food_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/foodaans_textview"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_fooda"
+            android:layout_marginRight="20dp"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_foodb"
+            android:layout_marginRight="5dp"/>
+
+
+    </LinearLayout>
+</RelativeLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

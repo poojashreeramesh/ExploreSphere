@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ic_common_background">
+    <RelativeLayout
+        android:id="@+id/layout_image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ic_bali_trip">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="My Trip to Bali"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_marginLeft="25dp"
+            android:textSize="32sp"/>
+
+    </RelativeLayout>
+<RelativeLayout
+    android:id="@+id/layout_details"
+    android:layout_below="@+id/layout_image"
+    android:layout_width="match_parent"
+    android:layout_marginTop="25dp"
+    android:layout_height="wrap_content"
+android:layout_marginLeft="15dp"
+    android:layout_marginRight="15dp"
+    android:background="@drawable/layout_white_background">
+    <TextView
+        android:id="@+id/paid_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Paid, double-check!"
+        android:textSize="32sp"
+        android:layout_marginLeft="15dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"/>
+    <TextView
+        android:id="@+id/bullet1_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="\u2022 Packing"
+        android:textSize="20sp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="10dp"
+        android:layout_below="@+id/paid_textview"
+        android:textColor="@color/black"/>
+    <TextView
+        android:id="@+id/bullet2_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="\u2022 Check Itineray and Flight Status"
+        android:textSize="20sp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="10dp"
+        android:layout_below="@+id/bullet1_textview"
+        android:textColor="@color/black"/>
+    <TextView
+        android:id="@+id/bullet3_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="\u2022 Double check Passports and Boarding   Pass"
+        android:textSize="20sp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="10dp"
+        android:layout_below="@+id/bullet2_textview"
+        android:textColor="@color/black"/>
+    <TextView
+        android:id="@+id/bullet4_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="\u2022 Confirm Travel Insurance"
+        android:textSize="20sp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="10dp"
+        android:layout_below="@+id/bullet3_textview"
+        android:textColor="@color/black"/>
+    <TextView
+        android:id="@+id/bullet5_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="\u2022 Check your prescriptions"
+        android:textSize="20sp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="10dp"
+        android:layout_below="@+id/bullet4_textview"
+        android:textColor="@color/black"/>
+    <TextView
+        android:id="@+id/bullet6_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="\u2022 Arrange Transportation"
+        android:textSize="20sp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="10dp"
+        android:layout_below="@+id/bullet5_textview"
+        android:textColor="@color/black"/>
+    <TextView
+        android:id="@+id/bullet7_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="\u2022 Contact the hotel to book your preferred room"
+        android:textSize="20sp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_below="@+id/bullet6_textview"
+        android:textColor="@color/black"/>
+
+</RelativeLayout>
+</RelativeLayout>

@@ -36,7 +36,7 @@ android:layout_marginBottom="30dp"
 <RelativeLayout
     android:id="@+id/layout_Q1"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
+    android:layout_height="315dp"
     android:layout_below="@+id/layout_survrey"
     android:background="@drawable/layout_background_aboutus"
     android:layout_margin="20dp">
