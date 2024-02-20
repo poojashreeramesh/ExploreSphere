@@ -39,7 +39,7 @@ public class SurveyQTwo extends Activity implements View.OnClickListener{
         public void onClick(View view) {
 
             Intent loginScreenIntent = new Intent(this,
-                   SurveyQOne.class);
+                   SurveyQThree.class);
 
             startActivity(loginScreenIntent);
             this.finish();

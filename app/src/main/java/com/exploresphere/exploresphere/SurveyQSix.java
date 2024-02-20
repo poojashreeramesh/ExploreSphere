@@ -19,7 +19,7 @@ public class SurveyQSix extends Activity implements View.OnClickListener{
     public void onCreate(Bundle savedInstance) {
 
         super.onCreate(savedInstance);
-        setContentView(R.layout.layout_survey_q2);
+        setContentView(R.layout.layout_survey_q6);
         value1Button=findViewById(R.id.button1);
         value2Button=findViewById(R.id.button2);
         value3Button=findViewById(R.id.button3);
@@ -39,7 +39,7 @@ public class SurveyQSix extends Activity implements View.OnClickListener{
     public void onClick(View view) {
 
         Intent loginScreenIntent = new Intent(this,
-                SurveyQOne.class);
+                SurveyQSeven.class);
 
         startActivity(loginScreenIntent);
         this.finish();

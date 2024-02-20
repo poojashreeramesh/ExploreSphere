@@ -6,7 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class SurveyQFour extends Activity implements View.OnClickListener{
+public class SurveyQNine  extends Activity implements View.OnClickListener{
 
 
         Button value1Button;
@@ -19,7 +19,7 @@ public class SurveyQFour extends Activity implements View.OnClickListener{
         public void onCreate(Bundle savedInstance) {
 
             super.onCreate(savedInstance);
-            setContentView(R.layout.layout_survey_q4);
+            setContentView(R.layout.layout_survey_q9);
             value1Button=findViewById(R.id.button1);
             value2Button=findViewById(R.id.button2);
             value3Button=findViewById(R.id.button3);
@@ -39,7 +39,7 @@ public class SurveyQFour extends Activity implements View.OnClickListener{
         public void onClick(View view) {
 
             Intent loginScreenIntent = new Intent(this,
-                    SurveyQFive.class);
+                    SurveyQTen.class);
 
             startActivity(loginScreenIntent);
             this.finish();
