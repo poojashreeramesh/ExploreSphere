@@ -24,24 +24,22 @@
             android:layout_height="wrap_content"
             android:textSize="12sp"
             android:layout_centerHorizontal="true"
-            android:text="We would like to know who will be joining you on the trip." android:gravity="center"
+            android:text="Complete this survey to unlock personalized travel packages tailored just for you
+
+" android:gravity="center"
             android:layout_marginLeft="10dp"
             android:layout_marginRight="10dp"
             android:layout_below="@+id/survey_TextView"
             android:layout_marginBottom="30dp"
-            android:textColor="#030303"/>
+            android:textColor="#8f8e8e"/>
     </RelativeLayout>
-
     <RelativeLayout
         android:id="@+id/layout_Q1"
         android:layout_width="match_parent"
         android:layout_height="315dp"
         android:layout_below="@+id/layout_survrey"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="20dp"
-        android:layout_marginBottom="20dp"
-        android:background="@drawable/layout_background_aboutus">
+        android:background="@drawable/layout_background_aboutus"
+        android:layout_margin="20dp">
 
         <TextView
             android:id="@+id/Q1_textview"
@@ -51,17 +49,10 @@
             android:layout_marginTop="20dp"
             android:layout_marginEnd="20dp"
             android:layout_marginBottom="20dp"
-            android:text="Q6"
+            android:text="Q7"
             android:textColor="#8f8e8e"
             android:textSize="30sp"
             android:textStyle="bold" />
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentEnd="true"
-            android:layout_marginRight="30dp"
-            android:layout_marginTop="20dp"
-            android:background="@drawable/ic_person"/>
 
         <TextView
             android:id="@+id/Q1e_textview"
@@ -72,21 +63,20 @@
             android:layout_marginTop="10dp"
             android:layout_marginEnd="10dp"
             android:layout_marginBottom="10dp"
-            android:text="How much money do you have set aside for this trip? "
+            android:text="Need help with getting travel insurance sorted?"
             android:textSize="29sp" />
-
         <RelativeLayout
+            android:layout_below="@+id/Q1e_textview"
             android:layout_width="match_parent"
             android:layout_height="4dp"
-            android:layout_below="@+id/Q1e_textview"
-            android:layout_marginLeft="20dp"
-            android:layout_marginTop="50dp"
             android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
             android:layout_marginBottom="30dp"
-            android:background="@drawable/layout_edittext">
-
+            android:background="@drawable/layout_edittext"
+            >
             <View
-                android:layout_width="160dp"
+                android:layout_width="190dp"
                 android:layout_height="match_parent"
                 android:background="@color/black"
 
@@ -94,42 +84,71 @@
         </RelativeLayout>
 
     </RelativeLayout>
-    <Button
-        android:id="@+id/button1"
-        android:layout_width="125dp"
-        android:layout_height="45dp"
-        android:layout_below="@+id/layout_Q1"
-        android:text="Solo"
-        android:layout_marginTop="30dp"
-        android:layout_marginLeft="40dp"
-        android:background="@drawable/layout_white_background"/>
 
-    <Button
-        android:id="@+id/button2"
-        android:layout_width="125dp"
-        android:layout_height="45dp"
-        android:layout_below="@+id/button1"
-        android:layout_marginTop="20dp"
-        android:text="Family"
-        android:background="@drawable/layout_white_background"
-        android:layout_marginLeft="40dp"/>
+    <RelativeLayout
+        android:id="@+id/layout_up"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layout_Q1"
+        android:layout_marginTop="40dp"
+       android:layout_marginLeft="30dp"
+        android:background="@drawable/layout_round_white">
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/ic_thumb_up_24"
+            android:text="" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_down"
+        android:layout_below="@+id/layout_Q1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/layout_round_white"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="40dp"
+        android:layout_marginRight="30dp">
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text=""
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="40dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/ic_thumb_down_24"
+            android:layout_marginBottom="15dp"/>
+    </RelativeLayout>
+
     <Button
         android:id="@+id/button3"
         android:layout_width="125dp"
         android:layout_height="45dp"
         android:layout_below="@+id/layout_Q1"
-        android:text="Partner"
+        android:text="2-4 days"
         android:layout_marginLeft="20dp"
         android:layout_alignParentEnd="true"
         android:layout_marginTop="30dp"
         android:layout_marginRight="40dp"
+        android:visibility="invisible"
         android:background="@drawable/layout_white_background"/>
     <Button
         android:id="@+id/button4"
         android:layout_width="125dp"
         android:layout_height="45dp"
         android:layout_below="@+id/button3"
-        android:text="Friends"
+        android:text="1-2 weeks"
+        android:visibility="invisible"
+
         android:layout_marginLeft="20dp"
         android:layout_marginTop="20dp"
         android:layout_alignParentEnd="true"
@@ -139,11 +158,11 @@
         android:id="@+id/button5"
         android:layout_width="125dp"
         android:layout_height="45dp"
-        android:layout_below="@+id/button2"
+        android:visibility="invisible"
+
         android:layout_marginTop="20dp"
-        android:text="Colleagues"
+        android:text="2-3 weeks"
         android:layout_marginLeft="40dp"
-        android:layout_centerHorizontal="true"
         android:background="@drawable/layout_white_background"/>
     <Button
         android:id="@+id/button6"
@@ -155,7 +174,8 @@
         android:layout_marginTop="20dp"
         android:layout_alignParentEnd="true"
         android:layout_marginRight="40dp"
-        android:background="@drawable/layout_white_background"
-        android:visibility="invisible"/>
+        android:visibility="invisible"
+
+        android:background="@drawable/layout_white_background"/>
 
 </RelativeLayout>

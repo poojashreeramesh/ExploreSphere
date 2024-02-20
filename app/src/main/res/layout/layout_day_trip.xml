@@ -1,0 +1,493 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/layout_white_background">
+    <RelativeLayout
+        android:id="@+id/layout_titleTv"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+       >
+        <Button
+            android:id="@+id/back_button"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/ic_arrow_back"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_trip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layout_titleTv"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp">
+
+        <TextView
+            android:id="@+id/police_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="15dp"
+
+            android:text="Day1"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/policenumber_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/police_textview"
+            android:layout_marginLeft="15dp"
+            android:text="21 Jan"
+            android:textSize="18sp"
+
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/abumlance_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="15dp"
+            android:layout_toRightOf="@+id/police_textview"
+            android:text="Day2"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/abumlancenumber_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/abumlance_textview"
+            android:layout_marginLeft="40dp"
+
+            android:layout_marginBottom="20dp"
+            android:layout_toRightOf="@+id/policenumber_textview"
+            android:text="22 Jan"
+            android:textSize="18sp"
+
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/fire_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="70dp"
+            android:layout_marginTop="15dp"
+            android:layout_toRightOf="@+id/abumlance_textview"
+            android:text="Day3"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/firenumber_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/fire_textview"
+            android:layout_marginLeft="60dp"
+            android:layout_marginBottom="20dp"
+            android:layout_toRightOf="@+id/abumlancenumber_textview"
+            android:text="23 Jan"
+            android:textSize="18sp"
+
+            android:textStyle="bold" />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/firenumber_textview"
+            android:background="@drawable/baseline_keyboard_arrow_right_24"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="40dp"/>
+
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/line_view"
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:layout_below="@+id/layout_trip"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/layout_edittext">
+
+        <View
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:background="#ff3b30"
+
+            />
+    </RelativeLayout>
+
+
+    <View
+        android:layout_width="4dp"
+        android:layout_height="450dp"
+        android:layout_below="@+id/line_view"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="28dp"
+        android:layout_marginLeft="175dp"
+        android:layout_marginTop="5dp"
+        android:background="#E91E63" />
+
+    <RelativeLayout
+        android:id="@+id/layout_value"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+android:layout_below="@+id/line_view"
+        android:layout_marginLeft="80dp"
+
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/layout_white_black_border">
+
+        <TextView
+            android:id="@+id/police1_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="15dp"
+
+            android:text="Flight"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/policenumber1_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/police1_textview"
+            android:layout_marginLeft="15dp"
+            android:text="From"
+            android:textSize="18sp"
+
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/tofilgth_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/policenumber1_textview"
+            android:layout_marginLeft="15dp"
+            android:text="To"
+            android:textSize="18sp"
+
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/abumlance1_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginLeft="50dp"
+
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="20dp"
+            android:text="3:00 pm"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/abumlancenumber1_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/abumlance1_textview"
+            android:layout_alignParentEnd="true"
+
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="20dp"
+
+            android:text="Dubai"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/bali_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/abumlancenumber1_textview"
+            android:layout_alignParentEnd="true"
+
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="20dp"
+
+            android:text="Bali"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/layout2_value"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_below="@+id/layout_value"
+        android:layout_marginLeft="80dp"
+
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/layout_white_black_border">
+
+        <TextView
+            android:id="@+id/police2_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="15dp"
+
+            android:text="Hotel Rest"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/policenumber2_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/police2_textview"
+            android:layout_marginLeft="15dp"
+            android:text="Ayana Hotel and Resorts"
+            android:textSize="18sp"
+
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/abumlance2_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginLeft="50dp"
+
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="20dp"
+            android:text="6:00 pm
+"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/abumlancenumber2_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/abumlance2_textview"
+            android:layout_alignParentEnd="true"
+
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="20dp"
+            android:text="22 Jan"
+            android:visibility="invisible"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:outlineSpotShadowColor="@color/black" />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/layout3_value"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_below="@+id/layout2_value"
+        android:layout_marginLeft="80dp"
+
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/layout_white_black_border">
+
+        <TextView
+            android:id="@+id/police3_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="15dp"
+
+            android:text="Cycling in Ubud"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/policenumber3_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/police3_textview"
+            android:layout_marginLeft="15dp"
+            android:text="Ubud Cycling Agency"
+            android:textSize="18sp"
+
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/abumlance3_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginLeft="50dp"
+
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="20dp"
+            android:text="8:00 pm
+"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/abumlancenumber3_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/abumlance3_textview"
+            android:layout_alignParentEnd="true"
+
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="20dp"
+            android:text="22 Jan"
+            android:textSize="18sp"
+            android:visibility="invisible"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/layout4_value"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_below="@+id/layout3_value"
+        android:layout_marginLeft="80dp"
+
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/layout_white_black_border">
+
+        <TextView
+            android:id="@+id/police4_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="15dp"
+
+            android:text="Local Shopping"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/policenumber4_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/police4_textview"
+            android:layout_marginLeft="15dp"
+            android:text="Mal Bali Galeria"
+            android:textSize="18sp"
+
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/abumlance4_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginLeft="50dp"
+
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="20dp"
+            android:text="10.00pm"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/abumlancenumber4_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/abumlance4_textview"
+            android:layout_alignParentEnd="true"
+
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="20dp"
+            android:text="22 Jan"
+            android:textSize="18sp"
+            android:visibility="invisible"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/layout5_value"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_below="@+id/layout4_value"
+        android:layout_marginLeft="80dp"
+
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/layout_white_black_border">
+
+        <TextView
+            android:id="@+id/police5_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="15dp"
+
+            android:text="Outdoor Dinner"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/policenumber5_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/police5_textview"
+            android:layout_marginLeft="15dp"
+            android:text="Ivy Cafe
+
+
+"
+            android:textSize="18sp"
+
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/abumlance5_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginLeft="50dp"
+
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="20dp"
+            android:text="11.00pm"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/abumlancenumber5_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/abumlance5_textview"
+            android:layout_alignParentEnd="true"
+
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="20dp"
+            android:text="22 Jan"
+            android:textSize="18sp"
+            android:visibility="invisible"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+</RelativeLayout>

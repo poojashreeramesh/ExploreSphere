@@ -96,29 +96,29 @@
     </RelativeLayout>
     <Button
         android:id="@+id/button1"
-        android:layout_width="125dp"
+        android:layout_width="140dp"
         android:layout_height="45dp"
         android:layout_below="@+id/layout_Q1"
-        android:text="2-3 days"
+        android:text="100$-500$"
         android:layout_marginTop="30dp"
         android:layout_marginLeft="40dp"
         android:background="@drawable/layout_white_background"/>
 
     <Button
         android:id="@+id/button2"
-        android:layout_width="125dp"
+        android:layout_width="140dp"
         android:layout_height="45dp"
         android:layout_below="@+id/button1"
         android:layout_marginTop="20dp"
-        android:text="5-7 days"
+        android:text="1000$-1500$"
         android:background="@drawable/layout_white_background"
         android:layout_marginLeft="40dp"/>
     <Button
         android:id="@+id/button3"
-        android:layout_width="125dp"
+        android:layout_width="130dp"
         android:layout_height="45dp"
         android:layout_below="@+id/layout_Q1"
-        android:text="2-4 days"
+        android:text="500$-1000$"
         android:layout_marginLeft="20dp"
         android:layout_alignParentEnd="true"
         android:layout_marginTop="30dp"
@@ -126,10 +126,10 @@
         android:background="@drawable/layout_white_background"/>
     <Button
         android:id="@+id/button4"
-        android:layout_width="125dp"
+        android:layout_width="140dp"
         android:layout_height="45dp"
         android:layout_below="@+id/button3"
-        android:text="1-2 weeks"
+        android:text="1500$-2000$"
         android:layout_marginLeft="20dp"
         android:layout_marginTop="20dp"
         android:layout_alignParentEnd="true"
@@ -137,19 +137,19 @@
         android:background="@drawable/layout_white_background"/>
     <Button
         android:id="@+id/button5"
-        android:layout_width="125dp"
+        android:layout_width="140dp"
         android:layout_height="45dp"
         android:layout_below="@+id/button2"
         android:layout_marginTop="20dp"
-        android:text="2-3 weeks"
+        android:text="2000$-2500$"
         android:layout_marginLeft="40dp"
         android:background="@drawable/layout_white_background"/>
     <Button
         android:id="@+id/button6"
-        android:layout_width="125dp"
+        android:layout_width="140dp"
         android:layout_height="45dp"
         android:layout_below="@+id/button4"
-        android:text="1+Months"
+        android:text="2500$+"
         android:layout_marginLeft="20dp"
         android:layout_marginTop="20dp"
         android:layout_alignParentEnd="true"
