@@ -80,11 +80,16 @@ android:layout_marginBottom="30dp"
     </RelativeLayout>
 
 </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/layout_button"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/layout_Q1">
     <Button
         android:id="@+id/button1"
         android:layout_width="125dp"
         android:layout_height="45dp"
-        android:layout_below="@+id/layout_Q1"
+
         android:text="2-3 days"
         android:layout_marginTop="30dp"
         android:layout_marginLeft="40dp"
@@ -103,7 +108,7 @@ android:layout_marginBottom="30dp"
         android:id="@+id/button3"
         android:layout_width="125dp"
         android:layout_height="45dp"
-        android:layout_below="@+id/layout_Q1"
+
         android:text="2-4 days"
         android:layout_marginLeft="20dp"
         android:layout_alignParentEnd="true"
@@ -141,5 +146,5 @@ android:layout_marginBottom="30dp"
         android:layout_alignParentEnd="true"
         android:layout_marginRight="40dp"
         android:background="@drawable/layout_white_background"/>
-
+    </RelativeLayout>
 </RelativeLayout>

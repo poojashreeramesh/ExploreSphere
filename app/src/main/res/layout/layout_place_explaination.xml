@@ -9,12 +9,12 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@drawable/ic_indoesia">
+
         <Button
             android:id="@+id/back_button"
             android:layout_width="50dp"
             android:layout_height="50dp"
-            android:background="@drawable/ic_arrow_black"
-            />
+            android:background="@drawable/ic_arrow_black" />
 
         <TextView
             android:id="@+id/weather_textview"
@@ -65,6 +65,7 @@
         android:layout_marginTop="5dp"
         android:background="@drawable/layout_white_background">
 <RelativeLayout
+    android:id="@+id/layout_explain"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content">
         <TextView
@@ -229,6 +230,13 @@
     </LinearLayout>
 </RelativeLayout>
     </ScrollView>
-
+<Button
+    android:id="@+id/right_button"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+   android:layout_centerHorizontal="true"
+    android:layout_marginBottom="20dp"
+    android:background="@drawable/ic_check_circle"/>
 
 </RelativeLayout>

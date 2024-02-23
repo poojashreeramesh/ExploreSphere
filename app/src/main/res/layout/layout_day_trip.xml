@@ -14,7 +14,7 @@
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:layout_marginTop="10dp"
-            android:background="@drawable/ic_arrow_back"/>
+            android:background="@drawable/ic_arrow_black"/>
     </RelativeLayout>
 
     <RelativeLayout
@@ -141,12 +141,12 @@
     <RelativeLayout
         android:id="@+id/layout_value"
         android:layout_width="match_parent"
-        android:layout_height="100dp"
+        android:layout_height="90dp"
 android:layout_below="@+id/line_view"
-        android:layout_marginLeft="80dp"
+        android:layout_marginLeft="50dp"
 
-        android:layout_marginRight="20dp"
-        android:layout_marginBottom="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="15dp"
         android:background="@drawable/layout_white_black_border">
 
         <TextView
@@ -159,7 +159,7 @@ android:layout_below="@+id/line_view"
             android:layout_marginEnd="15dp"
 
             android:text="Flight"
-            android:textSize="18sp"
+            android:textSize="14sp"
             android:textStyle="bold" />
 
         <TextView
@@ -169,7 +169,7 @@ android:layout_below="@+id/line_view"
             android:layout_below="@+id/police1_textview"
             android:layout_marginLeft="15dp"
             android:text="From"
-            android:textSize="18sp"
+            android:textSize="14sp"
 
             android:textStyle="bold" />
         <TextView
@@ -179,7 +179,7 @@ android:layout_below="@+id/line_view"
             android:layout_below="@+id/policenumber1_textview"
             android:layout_marginLeft="15dp"
             android:text="To"
-            android:textSize="18sp"
+            android:textSize="14sp"
 
             android:textStyle="bold" />
 
@@ -193,7 +193,7 @@ android:layout_below="@+id/line_view"
             android:layout_marginTop="15dp"
             android:layout_marginRight="20dp"
             android:text="3:00 pm"
-            android:textSize="18sp"
+            android:textSize="14sp"
             android:textStyle="bold" />
 
         <TextView
@@ -207,7 +207,7 @@ android:layout_below="@+id/line_view"
             android:layout_marginRight="20dp"
 
             android:text="Dubai"
-            android:textSize="18sp"
+            android:textSize="14sp"
             android:textStyle="bold" />
         <TextView
             android:id="@+id/bali_textview"
@@ -220,18 +220,18 @@ android:layout_below="@+id/line_view"
             android:layout_marginRight="20dp"
 
             android:text="Bali"
-            android:textSize="18sp"
+            android:textSize="14sp"
             android:textStyle="bold" />
     </RelativeLayout>
     <RelativeLayout
         android:id="@+id/layout2_value"
         android:layout_width="match_parent"
-        android:layout_height="80dp"
+        android:layout_height="70dp"
         android:layout_below="@+id/layout_value"
-        android:layout_marginLeft="80dp"
+        android:layout_marginLeft="50dp"
 
-        android:layout_marginRight="20dp"
-        android:layout_marginBottom="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="15dp"
         android:background="@drawable/layout_white_black_border">
 
         <TextView
@@ -244,7 +244,7 @@ android:layout_below="@+id/line_view"
             android:layout_marginEnd="15dp"
 
             android:text="Hotel Rest"
-            android:textSize="18sp"
+            android:textSize="14sp"
             android:textStyle="bold" />
 
         <TextView
@@ -254,7 +254,7 @@ android:layout_below="@+id/line_view"
             android:layout_below="@+id/police2_textview"
             android:layout_marginLeft="15dp"
             android:text="Ayana Hotel and Resorts"
-            android:textSize="18sp"
+            android:textSize="14sp"
 
             android:textStyle="bold" />
 
@@ -269,7 +269,7 @@ android:layout_below="@+id/line_view"
             android:layout_marginRight="20dp"
             android:text="6:00 pm
 "
-            android:textSize="18sp"
+            android:textSize="14sp"
             android:textStyle="bold" />
 
         <TextView
@@ -284,7 +284,7 @@ android:layout_below="@+id/line_view"
             android:layout_marginBottom="20dp"
             android:text="22 Jan"
             android:visibility="invisible"
-            android:textSize="18sp"
+            android:textSize="14sp"
             android:textStyle="bold" />
 
         <View
@@ -297,12 +297,12 @@ android:layout_below="@+id/line_view"
     <RelativeLayout
         android:id="@+id/layout3_value"
         android:layout_width="match_parent"
-        android:layout_height="80dp"
+        android:layout_height="70dp"
         android:layout_below="@+id/layout2_value"
-        android:layout_marginLeft="80dp"
+        android:layout_marginLeft="50dp"
 
-        android:layout_marginRight="20dp"
-        android:layout_marginBottom="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="15dp"
         android:background="@drawable/layout_white_black_border">
 
         <TextView
@@ -315,7 +315,7 @@ android:layout_below="@+id/line_view"
             android:layout_marginEnd="15dp"
 
             android:text="Cycling in Ubud"
-            android:textSize="18sp"
+            android:textSize="14sp"
             android:textStyle="bold" />
 
         <TextView
@@ -325,7 +325,7 @@ android:layout_below="@+id/line_view"
             android:layout_below="@+id/police3_textview"
             android:layout_marginLeft="15dp"
             android:text="Ubud Cycling Agency"
-            android:textSize="18sp"
+            android:textSize="14sp"
 
             android:textStyle="bold" />
 
@@ -340,7 +340,7 @@ android:layout_below="@+id/line_view"
             android:layout_marginRight="20dp"
             android:text="8:00 pm
 "
-            android:textSize="18sp"
+            android:textSize="14sp"
             android:textStyle="bold" />
 
         <TextView
@@ -362,12 +362,12 @@ android:layout_below="@+id/line_view"
     <RelativeLayout
         android:id="@+id/layout4_value"
         android:layout_width="match_parent"
-        android:layout_height="80dp"
+        android:layout_height="70dp"
         android:layout_below="@+id/layout3_value"
-        android:layout_marginLeft="80dp"
+        android:layout_marginLeft="50dp"
 
-        android:layout_marginRight="20dp"
-        android:layout_marginBottom="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="15dp"
         android:background="@drawable/layout_white_black_border">
 
         <TextView
@@ -380,7 +380,7 @@ android:layout_below="@+id/line_view"
             android:layout_marginEnd="15dp"
 
             android:text="Local Shopping"
-            android:textSize="18sp"
+            android:textSize="14sp"
             android:textStyle="bold" />
 
         <TextView
@@ -390,7 +390,7 @@ android:layout_below="@+id/line_view"
             android:layout_below="@+id/police4_textview"
             android:layout_marginLeft="15dp"
             android:text="Mal Bali Galeria"
-            android:textSize="18sp"
+            android:textSize="14sp"
 
             android:textStyle="bold" />
 
@@ -404,7 +404,7 @@ android:layout_below="@+id/line_view"
             android:layout_marginTop="15dp"
             android:layout_marginRight="20dp"
             android:text="10.00pm"
-            android:textSize="18sp"
+            android:textSize="14sp"
             android:textStyle="bold" />
 
         <TextView
@@ -426,11 +426,11 @@ android:layout_below="@+id/line_view"
     <RelativeLayout
         android:id="@+id/layout5_value"
         android:layout_width="match_parent"
-        android:layout_height="80dp"
+        android:layout_height="70dp"
         android:layout_below="@+id/layout4_value"
-        android:layout_marginLeft="80dp"
+        android:layout_marginLeft="50dp"
 
-        android:layout_marginRight="20dp"
+        android:layout_marginRight="10dp"
         android:layout_marginBottom="10dp"
         android:background="@drawable/layout_white_black_border">
 
@@ -444,7 +444,7 @@ android:layout_below="@+id/line_view"
             android:layout_marginEnd="15dp"
 
             android:text="Outdoor Dinner"
-            android:textSize="18sp"
+            android:textSize="14sp"
             android:textStyle="bold" />
 
         <TextView
@@ -457,7 +457,7 @@ android:layout_below="@+id/line_view"
 
 
 "
-            android:textSize="18sp"
+            android:textSize="14sp"
 
             android:textStyle="bold" />
 
@@ -471,7 +471,7 @@ android:layout_below="@+id/line_view"
             android:layout_marginTop="15dp"
             android:layout_marginRight="20dp"
             android:text="11.00pm"
-            android:textSize="18sp"
+            android:textSize="14sp"
             android:textStyle="bold" />
 
         <TextView
@@ -485,7 +485,7 @@ android:layout_below="@+id/line_view"
             android:layout_marginRight="20dp"
             android:layout_marginBottom="20dp"
             android:text="22 Jan"
-            android:textSize="18sp"
+            android:textSize="14sp"
             android:visibility="invisible"
             android:textStyle="bold" />
 

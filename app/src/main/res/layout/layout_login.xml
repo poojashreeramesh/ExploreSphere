@@ -20,7 +20,7 @@
 <RelativeLayout
     android:id="@+id/Layout_username"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
+    android:layout_height="match_parent"
     android:layout_below="@id/layout_logo"
     android:layout_centerHorizontal="true">
     <TextView
@@ -95,12 +95,14 @@
         android:background="@drawable/layout_edittext"
         android:layout_marginLeft="30dp"
         android:layout_marginRight="30dp"
-        android:textSize="16sp"
+        android:textSize="20sp"
+        android:textColor="#8f8e8e"
         android:layout_marginTop="10dp"
         android:imeOptions="actionDone"
         android:inputType="numberPassword"
         android:longClickable="false"
         android:maxLength="6"
+        android:text="1221111444"
         android:paddingRight="15dp"
         android:paddingLeft="10dp"
         android:lines="1"

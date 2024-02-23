@@ -9,25 +9,25 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.RelativeLayout;
 
-import androidx.annotation.Nullable;
 import androidx.core.content.ContextCompat;
 
-public class LoginScreen extends Activity implements View.OnClickListener {
-    Button logInButton;
-    RelativeLayout relativeLayout;
-    protected void onCreate(@Nullable Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.layout_login);
-        logInButton=findViewById(R.id.signIn_button);
-relativeLayout=findViewById(R.id.Layout_username);
-        logInButton.setOnClickListener(this);
-       relativeLayout.setOnClickListener(this);
-    }
+public class BaliScreen extends Activity implements View.OnClickListener{
 
+Button rightButton;
+RelativeLayout relativeLayout;
+    public void onCreate(Bundle savedInstance) {
+
+        super.onCreate(savedInstance);
+        setContentView(R.layout.layout_place_explaination);
+        rightButton= findViewById(R.id.right_button);
+relativeLayout =findViewById(R.id.layout_explain);
+rightButton.setOnClickListener(this);
+relativeLayout.setOnClickListener(this);
+    }
     @Override
     public void onClick(View view) {
-        if(view.getId() == R.id.Layout_username){
-            logInButton.setBackground(ContextCompat.getDrawable(LoginScreen.this, R.drawable.layout_select_button));
+        if( view.getId() == R.id.layout_explain) {
+            rightButton.setBackground(ContextCompat.getDrawable(this, R.drawable.ic_check_circle_text));
             GradientDrawable highlightDrawable = new GradientDrawable();
             //  highlightDrawable.s(ContextCompat.getDrawable(SplashScreen.this, R.drawable.));
 
@@ -41,19 +41,24 @@ relativeLayout=findViewById(R.id.Layout_username);
                 @Override
                 public void run() {
                     // Restore the original background (optional)
-                    logInButton.setBackground(ContextCompat.getDrawable(LoginScreen.this, R.drawable.layout_button));
+                    rightButton.setBackground(ContextCompat.getDrawable(BaliScreen.this, R.drawable.ic_check_circle));
 
                     // Perform the login button click action or any other desired action
                     // loginButton.performClick();
                 }
             }, duration);
-        }
-        if (view.getId() == R.id.signIn_button) {
+        } else if (view.getId() == R.id.right_button) {
+
+
             Intent loginScreenIntent = new Intent(this,
-                    SurveyQOne.class);
+                   DayTripScreen.class);
 
             startActivity(loginScreenIntent);
             this.finish();
         }
+
+
+
+
     }
 }

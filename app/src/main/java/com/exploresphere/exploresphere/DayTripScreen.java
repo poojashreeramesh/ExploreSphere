@@ -7,27 +7,23 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.view.View;
 import android.widget.Button;
-import android.widget.RelativeLayout;
 
-import androidx.annotation.Nullable;
-import androidx.core.content.ContextCompat;
+public class DayTripScreen extends Activity implements View.OnClickListener{
 
-public class LoginScreen extends Activity implements View.OnClickListener {
-    Button logInButton;
-    RelativeLayout relativeLayout;
-    protected void onCreate(@Nullable Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.layout_login);
-        logInButton=findViewById(R.id.signIn_button);
-relativeLayout=findViewById(R.id.Layout_username);
-        logInButton.setOnClickListener(this);
-       relativeLayout.setOnClickListener(this);
+Button idBackButton;
+
+    public void onCreate(Bundle savedInstance) {
+
+        super.onCreate(savedInstance);
+        setContentView(R.layout.layout_day_trip);
+idBackButton =findViewById(R.id.back_button);
+
+idBackButton.setOnClickListener(this);
     }
-
     @Override
     public void onClick(View view) {
-        if(view.getId() == R.id.Layout_username){
-            logInButton.setBackground(ContextCompat.getDrawable(LoginScreen.this, R.drawable.layout_select_button));
+        if( view.getId() == R.id.layout_button) {
+            //  value1Button.setBackground(ContextCompat.getDrawable(this, R.drawable.layout_select_button));
             GradientDrawable highlightDrawable = new GradientDrawable();
             //  highlightDrawable.s(ContextCompat.getDrawable(SplashScreen.this, R.drawable.));
 
@@ -41,19 +37,24 @@ relativeLayout=findViewById(R.id.Layout_username);
                 @Override
                 public void run() {
                     // Restore the original background (optional)
-                    logInButton.setBackground(ContextCompat.getDrawable(LoginScreen.this, R.drawable.layout_button));
+                    //   value1Button.setBackground(ContextCompat.getDrawable(SurveyQEigth.this, R.drawable.layout_white_background));
 
                     // Perform the login button click action or any other desired action
                     // loginButton.performClick();
                 }
             }, duration);
-        }
-        if (view.getId() == R.id.signIn_button) {
+        } else if (view.getId() == R.id.back_button) {
+
+
             Intent loginScreenIntent = new Intent(this,
-                    SurveyQOne.class);
+                    NewMainScreen.class);
 
             startActivity(loginScreenIntent);
             this.finish();
         }
+
+
+
+
     }
 }

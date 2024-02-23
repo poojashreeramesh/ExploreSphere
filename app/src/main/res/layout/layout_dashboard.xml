@@ -32,9 +32,10 @@
             android:layout_marginTop="10dp"
             android:layout_marginEnd="10dp"
             android:layout_marginBottom="10dp"
-            android:background="@drawable/ic_settings" />
+            android:background="@drawable/ic_settings_24" />
     </RelativeLayout>
     <RelativeLayout
+        android:id="@+id/layout_home"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/layout_titleTv">
@@ -74,7 +75,7 @@ android:layout_below="@+id/beach_textview"
             android:layout_alignParentRight="true"
             android:layout_marginRight="20dp"
             android:background="@drawable/ic_location"/>
-        <Button
+        <ImageView
             android:id="@+id/cyle_button"
             android:layout_width="30dp"
             android:layout_height="30dp"
@@ -82,14 +83,14 @@ android:layout_below="@+id/beach_textview"
             android:layout_below="@id/place_textview"
             android:layout_marginTop="40dp"
             android:layout_marginBottom="10dp"/>
-        <Button
+        <ImageView
             android:id="@+id/fire_button"
             android:layout_width="30dp"
             android:layout_height="30dp"
             android:background="@drawable/ic_bike"
             android:layout_below="@id/cyle_button"
             android:layout_marginBottom="10dp"/>
-        <Button
+        <ImageView
             android:id="@+id/done_button"
             android:layout_width="30dp"
             android:layout_height="30dp"
@@ -119,40 +120,48 @@ android:layout_below="@+id/beach_textview"
 
 
 
-                <Button
+                <ImageView
                     android:id="@+id/top_up_button"
                     android:layout_width="112dp"
                     android:layout_height="300dp"
                     android:layout_weight="1"
-                    android:background="@drawable/ic_goa"
 
 
-                    android:textColor="@color/white"
+                    android:src="@drawable/ic_goa"
                     android:textStyle="bold" />
+<RelativeLayout
+    android:id="@+id/layout_image"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
 
-                <Button
-                    android:id="@+id/data_button"
-                    android:layout_width="112dp"
-                    android:layout_height="300dp"
-                    android:layout_marginLeft="5dp"
-                    android:layout_weight="1"
-                    android:background="@drawable/ic_bali"
+    <ImageView
+        android:id="@+id/data_button"
+        android:layout_width="112dp"
+        android:layout_height="300dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_weight="1"
 
-                    android:textColor="@color/white"
-                    android:textStyle="bold" />
-
-                <Button
+        android:src="@drawable/ic_bali"
+        android:textColor="@color/white"
+        android:textStyle="bold" />
+    </RelativeLayout>
+                <ImageView
                     android:id="@+id/bundle_button"
                     android:layout_width="112dp"
                     android:layout_height="300dp"
                     android:layout_marginLeft="5dp"
                     android:layout_weight="1"
-                    android:background="@drawable/ic_thailand"
 
+                    android:src="@drawable/ic_thailand"
                     android:textColor="@color/white"
                     android:textStyle="bold" />
 
-                <Button
+                <ImageView
                     android:id="@+id/flexi_button"
                     android:layout_width="112dp"
                     android:layout_height="300dp"
@@ -160,29 +169,6 @@ android:layout_below="@+id/beach_textview"
                     android:layout_weight="1"
                     android:background="@drawable/ic_combodia"
                     android:text="Flexi"
-                    android:textColor="@color/white"
-                    android:textStyle="bold"
-                    android:visibility="visible" />
-
-                <Button
-                    android:id="@+id/pin_button"
-                    android:layout_width="0dp"
-                    android:layout_height="40dp"
-                    android:layout_marginLeft="5dp"
-                    android:layout_weight="1"
-                    android:background="@drawable/layout_white_background"
-                    android:text="PIN"
-                    android:textColor="@color/white"
-                    android:textStyle="bold"
-                    android:visibility="visible" />
-                <Button
-                    android:id="@+id/eVoucher_button"
-                    android:layout_width="0dp"
-                    android:layout_height="40dp"
-                    android:layout_marginLeft="5dp"
-                    android:layout_weight="1"
-                    android:background="@drawable/layout_white_background"
-                    android:text="e Voucher"
                     android:textColor="@color/white"
                     android:textStyle="bold"
                     android:visibility="visible" />
