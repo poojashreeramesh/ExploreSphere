@@ -1,0 +1,409 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#d4d3d3"
+    android:id="@+id/layout_home"
+    >
+
+    <ScrollView
+
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/layout_background_aboutus">
+
+        <RelativeLayout
+            android:id="@+id/layout_Explore"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:id="@+id/layout_titleTv"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:background="@drawable/layout_about_us">
+
+                <Button
+                    android:id="@+id/id_backbutton"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/ic_arrow_back" />
+
+                <TextView
+                    android:id="@+id/titletv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/id_backbutton"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="About Us"
+                    android:layout_marginLeft="20dp"
+                    android:textStyle="bold"
+                    android:textColor="#ffffff"
+                    android:textSize="22sp" />
+                <TextView
+                    android:id="@+id/textView_I"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="i"
+                    android:layout_marginLeft="20dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginRight="40dp"
+                    android:textStyle="bold"
+                    android:textColor="#ffffff"
+
+                    android:textSize="32sp" />
+            </RelativeLayout>
+
+
+
+
+
+
+
+            <RelativeLayout
+                android:id="@+id/layout_steps"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/layout_titleTv"
+                android:background="@drawable/layout_button"
+                android:layout_marginBottom="30dp"
+                android:layout_marginTop="20dp">
+                <ImageView
+                    android:id="@+id/working_image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/ic_working"
+                    android:layout_centerHorizontal="true"
+                    android:layout_margin="10dp"/>
+                <TextView
+                    android:id="@+id/started_textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="52sp"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:layout_below="@+id/working_image"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center"
+                    android:text="How to get Started"/>
+                <TextView
+                    android:id="@+id/step1_textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="42sp"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:layout_below="@+id/started_textView"
+                    android:layout_margin="10dp"
+                    android:text="Step1"/>
+                <TextView
+                    android:id="@+id/step1explain_textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="25sp"
+                    android:textColor="@color/white"
+
+                    android:layout_below="@+id/step1_textView"
+                    android:layout_margin="10dp"
+                    android:text="SignUp or Login and take a short survey about your personality and travel deeds"/>
+                <View
+                    android:id="@+id/line"
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@+id/step1explain_textView"
+                    android:layout_margin="5dp"
+                    android:background="#ffffff" />
+                <TextView
+                    android:id="@+id/step2_textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="42sp"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:layout_below="@+id/line"
+                    android:layout_margin="10dp"
+                    android:text="Step2"/>
+                <TextView
+                    android:id="@+id/step2explain_textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="25sp"
+                    android:textColor="@color/white"
+
+                    android:layout_below="@+id/step2_textView"
+                    android:layout_margin="10dp"
+                    android:text="Uncover and pick Locations Suggested by the App or easily Serach for them"/>
+                <View
+                    android:id="@+id/line2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@+id/step2explain_textView"
+                    android:layout_margin="5dp"
+                    android:background="#ffffff" />
+                <TextView
+                    android:id="@+id/step3_textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="42sp"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:layout_below="@+id/line2"
+                    android:layout_margin="10dp"
+                    android:text="Step3"/>
+                <TextView
+                    android:id="@+id/step3explain_textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="25sp"
+                    android:textColor="@color/white"
+
+                    android:layout_below="@+id/step3_textView"
+                    android:layout_margin="10dp"
+                    android:text="Uncover and pick Locations Suggested by the App or easily Serach for them"/>
+                <Button
+                    android:id="@+id/signInWork_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_below="@id/step3explain_textView"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginLeft="30dp"
+                    android:textColor="@color/white"
+                    android:text="Sign Up Now"
+                    android:textStyle="bold"
+                    android:background="@drawable/layout_button"
+                    android:layout_marginBottom="20dp"
+                    />
+            </RelativeLayout>
+            <TextView
+                android:id="@+id/encrytion_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:layout_below="@+id/layout_steps"
+                android:text="Encrytion"
+                android:layout_marginLeft="20dp"/>
+            <TextView
+                android:id="@+id/data_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="24sp"
+                android:layout_below="@+id/layout_steps"
+                android:text="Your data is secure."
+                android:layout_centerHorizontal="true"
+                android:textStyle="bold"
+                android:layout_margin="15dp"
+                android:textColor="@color/black"
+                />
+            <TextView
+                android:id="@+id/dataexplaination_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:layout_below="@+id/data_textview"
+                android:text="We prioritze the security of your data. our advanced encrytion protcols ensure that your survey responses are safety stored in the cloud Rest assured that your data is protected with us"
+                android:layout_centerHorizontal="true"
+
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:textColor="@color/black"
+                />
+            <Button
+                android:id="@+id/learnMore_button"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@id/dataexplaination_textview"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"
+                android:textColor="@color/white"
+                android:text="Learn More"
+                android:textStyle="bold"
+                android:background="@drawable/layout_button"
+                android:layout_marginBottom="10dp"
+                />
+            <ImageView
+                android:id="@+id/data_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_protected"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/learnMore_button"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="20dp"
+                />
+            <TextView
+                android:id="@+id/cost_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:layout_below="@+id/data_image"
+                android:text="COSTSAVER"
+                android:layout_marginLeft="20dp"/>
+
+            <TextView
+                android:id="@+id/costexplaination_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/cost_textview"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginBottom="15dp"
+                android:text="Save costs efficiently"
+                android:textColor="@color/black"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/costviewexplaination_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:layout_below="@+id/costexplaination_textview"
+                android:text="Optimize your travel fantasies and reduce expenses with our powerful cost-saving tool. Leverage advanced analytics and optimization algorithms to identify areas for improvement and maximize your savings."
+                android:layout_centerHorizontal="true"
+
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:textColor="@color/black"
+                />
+            <Button
+                android:id="@+id/learnMore2_button"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@id/costviewexplaination_textview"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"
+                android:textColor="@color/white"
+                android:text="Learn More"
+                android:textStyle="bold"
+                android:background="@drawable/layout_button"
+                android:layout_marginBottom="10dp"
+                />
+            <RelativeLayout
+                android:id="@+id/layout_bottom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/learnMore2_button"
+                android:background="@drawable/layout_about_us">
+
+                <TextView
+                    android:id="@+id/ExploreSphere_TextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:text="ExploreSphere"
+                    android:textColor="@color/white"
+                    android:textSize="22sp"
+                    android:textStyle="bold" />
+                <TextView
+                    android:id="@+id/Exploreall_TextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2024@ AetherX All rights reserved"
+                    android:layout_below="@+id/ExploreSphere_TextView"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:textSize="15sp"
+                    android:layout_margin="10dp"/>
+
+                <TextView
+                    android:id="@+id/Home_TextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/Exploreall_TextView"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:text="Home"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+                <TextView
+                    android:id="@+id/aboutus_TextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="About Us"
+                    android:layout_below="@+id/Home_TextView"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:layout_margin="4dp"/>
+                <TextView
+                    android:id="@+id/Contact_TextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Contact"
+                    android:layout_below="@+id/aboutus_TextView"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:layout_margin="4dp"/>
+                <TextView
+                    android:id="@+id/address_TextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="aetherx@ihsdubai.or"
+                    android:layout_margin="4dp"
+                    android:layout_below="@+id/Contact_TextView"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    />
+
+                <TextView
+                    android:id="@+id/privacy_TextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/Exploreall_TextView"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="30dp"
+                    android:layout_marginBottom="4dp"
+                    android:layout_toRightOf="@+id/Home_TextView"
+                    android:text="Privacy Policy"
+                    android:layout_alignParentEnd="true"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+                <TextView
+                    android:id="@+id/Terms_TextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Terms of Use"
+                    android:layout_toRightOf="@+id/aboutus_TextView"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:layout_below="@id/privacy_TextView"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginTop="10dp"/>
+            </RelativeLayout>
+        </RelativeLayout>
+
+    </ScrollView>
+</RelativeLayout>

@@ -2,13 +2,14 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/white"
    >
 
     <RelativeLayout
         android:id="@+id/layout_image"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@drawable/ic_indoesia">
+        android:background="@drawable/ic_siem">
 
         <Button
             android:id="@+id/back_button"
@@ -27,6 +28,7 @@
             android:layout_marginBottom="10dp"
             android:text="Weather data given by IHS-Weathering Heights"
             android:textSize="14dp"
+            android:textColor="@color/white"
             android:textStyle="bold" />
 
         <TextView
@@ -37,8 +39,8 @@
             android:layout_marginStart="10dp"
 
             android:layout_marginEnd="10dp"
-
-            android:text="Bali    14C"
+android:textColor="@color/white"
+            android:text="Seam Reap    14C"
             android:textSize="18dp"
             android:textStyle="bold" />
 
@@ -51,7 +53,8 @@
 
             android:layout_marginEnd="10dp"
             android:layout_marginBottom="10dp"
-            android:text="Indonesia"
+            android:text="Cambodia"
+            android:textColor="@color/white"
             android:textSize="32sp"
             android:textStyle="bold" />
 
@@ -73,7 +76,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="right"
-            android:text="5 days and 4 nights Stay in Bali"
+            android:text="5 days and 4 nights Stay in Seam Reap"
             android:textSize="15dp"
             android:textStyle="bold"
             android:layout_marginRight="15dp"
@@ -83,7 +86,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:gravity="right"
-            android:text="Why Bali?"
+            android:text="Why Seam Reap?"
             android:textSize="25dp"
             android:textStyle="bold"
             android:layout_marginLeft="15dp"
@@ -95,7 +98,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
 
-        android:text="Bali is famous for a diverse experience blending adventure and tranquility. Explore the island's scenic landscapes on cycling tours, immersing in lush rice terraces and vibrant local culture. Bali's pristine beaches offer sun-soaked relaxation and thrilling water activities. Moreover, the island's spiritual essence, with its ancient temples and yoga retreats, provides a serene retreat for self-discovery. Bali's unique blend of cycling adventures, idyllic beaches, and spiritual retreats creates an unforgettable journey, appealing to those seeking both thrilling exploration and inner peace.
+        android:text="Seam Reap is famous for a diverse experience blending adventure and tranquility. Explore the island's scenic landscapes on cycling tours, immersing in lush rice terraces and vibrant local culture. Bali's pristine beaches offer sun-soaked relaxation and thrilling water activities. Moreover, the island's spiritual essence, with its ancient temples and yoga retreats, provides a serene retreat for self-discovery. Cambodia's unique blend of cycling adventures, idyllic beaches, and spiritual retreats creates an unforgettable journey, appealing to those seeking both thrilling exploration and inner peace.
 
 "
         android:textSize="16dp"
@@ -147,7 +150,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
 
-        android:text="Bali, renowned for its enchanting landscapes and vibrant culture, boasts a plethora of top-notch hotels. Among the best, the luxurious Ayana Resort and Spa offers breathtaking cliffside views, while The St. Regis Bali Resort combines opulence with traditional Balinese charm. The Mulia, with its pristine beaches, and the Four Seasons Resort Bali at Sayan, nestled in lush greenery, redefine indulgence in this tropical paradise."
+        android:text="Seam Reap, renowned for its enchanting landscapes and vibrant culture, boasts a plethora of top-notch hotels. Among the best, the luxurious Ayana Resort and Spa offers breathtaking cliffside views, while The St. Regis Bali Resort combines opulence with traditional Balinese charm. The Mulia, with its pristine beaches, and the Four Seasons Resort Bali at Sayan, nestled in lush greenery, redefine indulgence in this tropical paradise."
 
 
         android:textSize="16dp"
@@ -196,7 +199,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
 
-        android:text="Bali, a paradise for food enthusiasts, offers a tantalizing array of culinary delights that capture the essence of Indonesian cuisine. From savory Nasi Goreng, a flavorful fried rice dish, to succulent Babi Guling, a traditional Balinese roast pork, every bite unveils a symphony of spices and local flavors. Fresh seafood warung by the beach and vibrant markets showcasing exotic fruits add to the island's gastronomic charm, making Bali a haven for those seeking an unforgettable culinary adventure."
+        android:text="Seam Reap, a paradise for food enthusiasts, offers a tantalizing array of culinary delights that capture the essence of Indonesian cuisine. From savory Nasi Goreng, a flavorful fried rice dish, to succulent Babi Guling, a traditional Balinese roast pork, every bite unveils a symphony of spices and local flavors. Fresh seafood warung by the beach and vibrant markets showcasing exotic fruits add to the island's gastronomic charm, making Bali a haven for those seeking an unforgettable culinary adventure."
 
 
         android:textSize="16dp"

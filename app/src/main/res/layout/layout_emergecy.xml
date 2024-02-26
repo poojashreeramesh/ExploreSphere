@@ -2,12 +2,18 @@
 <RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
-
+    android:layout_height="match_parent"
+    android:background="@color/white">
+<RelativeLayout
+    android:id="@+id/layout_titleTv"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/black">
     <RelativeLayout
-        android:id="@+id/layout_titleTv"
+
         android:layout_width="match_parent"
-        android:layout_height="130dp"
+        android:layout_height="80dp"
+
         android:background="@drawable/ic_background_rounded">
         <Button
             android:id="@+id/back_button"
@@ -19,12 +25,13 @@
 
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/back_button"
+
             android:text="Emergency Numbers"
             android:textColor="@color/white"
             android:textStyle="bold"
-            android:textSize="30sp"
-            android:layout_marginLeft="20dp"/>
+            android:textSize="22sp"
+          android:layout_marginTop="10dp"
+            android:layout_marginLeft="50dp"/>
 
         <TextView
             android:layout_width="wrap_content"
@@ -35,9 +42,9 @@
             android:textStyle="bold"
             android:textSize="15sp"
 
-            android:layout_marginLeft="20dp"/>
+            android:layout_marginLeft="50dp"/>
     </RelativeLayout>
-
+</RelativeLayout>
     <TextView
         android:id="@+id/what_textview"
         android:layout_width="wrap_content"
@@ -48,7 +55,7 @@
         android:layout_marginEnd="20dp"
         android:layout_marginBottom="20dp"
         android:text="What is your emergency?"
-        android:textSize="20sp"
+        android:textSize="18sp"
         android:textStyle="bold" />
     <LinearLayout
 
@@ -108,28 +115,31 @@
         android:layout_below="@+id/layout_button"
         android:layout_marginStart="20dp"
         android:layout_marginTop="10dp"
-        android:layout_marginEnd="10dp"
-        android:layout_marginBottom="10dp"
+
+
         android:text="Common Scams In Bali?"
-        android:textSize="20sp"
+        android:textSize="18sp"
         android:textStyle="bold" />
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/common_textview"
-        android:layout_above="@+id/layout_bottom">
+        android:layout_above="@+id/layout_bottom"
+       >
     <TextView
         android:id="@+id/commonexpl_textview"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/common_textview"
         android:layout_marginStart="20dp"
-        android:layout_marginTop="10dp"
+
         android:layout_marginEnd="10dp"
-        android:layout_marginBottom="10dp"
+
         android:text="In Bali, a common scam involves fraudulent rental agencies presenting counterfeit accommodations online. Travelers, attracted by enticing photos and low prices, often arrive at non-existent or subpar properties. To avoid falling victim, it's crucial to verify the legitimacy of rental agencies, read reviews, and book through reputable platforms. Stay vigilant to protect against deceptive practices."
         android:textColor="#030303"
-        android:textSize="20sp" />
+        android:textSize="16sp"
+
+        />
 </ScrollView>
 
     <RelativeLayout
@@ -139,7 +149,7 @@
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginStart="20dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="10dp"
         android:layout_marginEnd="20dp"
         android:layout_marginBottom="20dp"
         android:background="@drawable/layout_white_black_border"

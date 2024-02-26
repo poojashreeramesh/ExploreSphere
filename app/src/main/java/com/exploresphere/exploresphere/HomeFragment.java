@@ -20,13 +20,16 @@ public class HomeFragment extends Fragment implements View.OnClickListener {
 RelativeLayout homeRelativeLayout;
     RelativeLayout imagelayout;
     ImageView imageView;
-
+    ImageView imageViewtop;
+    ImageView imageViewbundle;
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View layoutView = inflater.inflate(R.layout.layout_dashboard, container, false);
         homeRelativeLayout = layoutView.findViewById(R.id.layout_home);
         imageView = layoutView.findViewById(R.id.data_button);
+        imageViewtop = layoutView.findViewById(R.id.bundle_button);
+        imageViewbundle = layoutView.findViewById(R.id.top_up_button);
         imagelayout=layoutView.findViewById(R.id.layout_image);
         homeRelativeLayout.setOnClickListener(this);
         imagelayout.setOnClickListener(this);
@@ -37,7 +40,7 @@ RelativeLayout homeRelativeLayout;
 
     @Override
     public void onClick(View view) {
-        if( view.getId() == R.id.layout_home) {
+        if( view.getId() == R.id.layout_home || view.getId()==R.id.bundle_button || view.getId()==R.id.top_up_button) {
             imageView.setBackground(ContextCompat.getDrawable(getContext(), R.drawable.layout_white_black_border));
             GradientDrawable highlightDrawable = new GradientDrawable();
             //  highlightDrawable.s(ContextCompat.getDrawable(SplashScreen.this, R.drawable.));
@@ -52,7 +55,7 @@ RelativeLayout homeRelativeLayout;
                 @Override
                 public void run() {
                     // Restore the original background (optional)
-                    imageView.setImageDrawable(ContextCompat.getDrawable(getActivity(), R.drawable.ic_bali));
+                    imageView.setImageDrawable(ContextCompat.getDrawable(getActivity(), R.drawable.ic_cambodia));
                     imageView.setBackground(ContextCompat.getDrawable(getContext(), R.drawable.layout_edittext));
                     // Perform the login button click action or any other desired action
                     // loginButton.performClick();

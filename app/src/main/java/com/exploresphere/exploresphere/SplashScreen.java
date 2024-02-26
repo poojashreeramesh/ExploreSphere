@@ -136,6 +136,12 @@ logInButton.setOnClickListener(this);
         startActivity(ScreenIntent);
         this.finish();
     }
+        if (view.getId() == R.id.signIn_button) {
+            Intent ScreenIntent = new Intent(this,
+                    LinkBioScreen.class);
+            startActivity(ScreenIntent);
+            this.finish();
+        }
         }
     }
 
